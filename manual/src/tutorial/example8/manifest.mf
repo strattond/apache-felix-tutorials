@@ -1,0 +1,8 @@
+Bundle-Activator: tutorial.example8.Activator
+Import-Package: tutorial.example2.service, tutorial.example6.service,
+ org.apache.felix.servicebinder
+Bundle-Name: Service Binder Spell checker service
+Bundle-Description: A bundle that implements a simple spell checker service
+Bundle-Vendor: Apache Felix
+Bundle-Version: 1.0.0
+Metadata-Location: tutorial/example8/metadata.xml
