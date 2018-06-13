@@ -22,7 +22,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.felix</groupId>
+      <groupId>org.osgi</groupId>
       <artifactId>org.osgi.core</artifactId>
       <version>${osgi_core.version}</version>
     </dependency>
@@ -43,6 +43,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven_compiler.version}</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>

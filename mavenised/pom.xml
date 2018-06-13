@@ -7,18 +7,18 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
-    <java.version>1.5</java.version>
-    <junit.version>3.8.1</junit.version>
+    <java.version>1.8</java.version>
+    <junit.version>4.12</junit.version>
     <bnd_maven.version>4.0.0</bnd_maven.version>
-    <maven_bundle.version>2.5.3</maven_bundle.version>
+    <maven_bundle.version>3.5.0</maven_bundle.version>
     <maven_compiler.version>3.7.0</maven_compiler.version>
     <maven_jar.version>3.1.0</maven_jar.version>
     <maven_source.version>3.0.1</maven_source.version>
     <maven_javadoc.version>3.0.1</maven_javadoc.version>
     <maven_surefire.version>2.21.0</maven_surefire.version>
-    <osgi_core.version>1.4.0</osgi_core.version>
-    <osgi_compendium.version>1.4.0</osgi_compendium.version>
-    <felix_framework.version>4.6.0</felix_framework.version>
+    <osgi_core.version>5.0.0</osgi_core.version>
+    <osgi_compendium.version>5.0.0</osgi_compendium.version>
+    <felix_framework.version>5.6.10</felix_framework.version>
   </properties>
   <modules>
     <module>example1</module>

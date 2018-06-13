@@ -2,6 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
+  <parent>
+    <groupId>felix.tutorial</groupId>  
+    <artifactId>all-examples</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <groupId>felix.tutorial</groupId>
   <artifactId>example6</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -16,54 +22,55 @@
 
   <dependencies>
     <dependency>
-		<groupId>org.apache.felix</groupId>
-		<artifactId>org.osgi.core</artifactId>
-		<version>1.4.0</version>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.felix</groupId>
-		<artifactId>org.osgi.compendium</artifactId>
-		<version>1.4.0</version>
-	</dependency>
-	<dependency>
-		<groupId>felix.tutorial</groupId>
-		<artifactId>example6.service</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</dependency>
-	<dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>${osgi_core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+      <version>${osgi_compendium.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>felix.tutorial</groupId>
+      <artifactId>example6.service</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <version>2.5.3</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <Private-Package>
-                            tutorial.example6
-                        </Private-Package>
-                        <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Activator>
-                            tutorial.example6.Activator
-                        </Bundle-Activator>
-                    </instructions>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven_compiler.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>${maven_bundle.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Private-Package>
+              tutorial.example6
+            </Private-Package>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Bundle-Activator>
+              tutorial.example6.Activator
+            </Bundle-Activator>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
