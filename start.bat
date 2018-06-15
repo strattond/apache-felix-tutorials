@@ -1,2 +1,5 @@
-cd %FELIX_HOME%
-java -jar %FELIX_HOME%\bin\felix.jar
+@echo off
+pushD %FELIX_HOME%
+echo java -jar %FELIX_HOME%\bin\felix.jar %*
+java -jar %FELIX_HOME%\bin\felix.jar %*
+popD
