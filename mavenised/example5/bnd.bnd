@@ -1,0 +1,3 @@
+Bundle-Activator: tutorial.example5.Activator
+Bundle-Description: A dictinoary client using the Service Tracker
+Export-Package: tutorial.example5

@@ -1,0 +1,3 @@
+Bundle-Activator: tutorial.example3.Activator
+Bundle-Description: A bundle that uses the dictionary service if it finds it at startup
+Export-Package: tutorial.example3

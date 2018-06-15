@@ -2,7 +2,7 @@
 
 An implementation of [Apache Felix tutorials](http://felix.apache.org/documentation/tutorials-examples-and-presentations/apache-felix-osgi-tutorial.html).
 
-It has been updated to include Maven based projects for each of the samples.
+It has been updated to include Maven based projects for each of the samples, and is configured to use the [bnd-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-maven-plugin).
 
 **Note** that Example 8 doesn't currently work with Maven after trying to bring it up to speed.
 
