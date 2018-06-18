@@ -1,0 +1,2 @@
+Bundle-Activator: tutorial.example1.Activator
+Bundle-Description: A bundle that displays messages at startup and when service events occur

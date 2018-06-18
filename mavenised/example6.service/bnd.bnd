@@ -1,0 +1,2 @@
+Bundle-Description: A bundle that describes a Spell Checker API
+Export-Package: tutorial.example6.service

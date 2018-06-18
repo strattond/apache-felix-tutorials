@@ -1,0 +1,2 @@
+Bundle-Description: A bundle that contains a Declarative Services Spell Checker Component
+Export-Package: tutorial.example9

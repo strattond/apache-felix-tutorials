@@ -10,7 +10,7 @@
 
   <groupId>felix.tutorial</groupId>
   <artifactId>example1</artifactId>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
 
   <name>Service Listener Example</name>
@@ -38,30 +38,14 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>${maven_compiler.version}</version>
-        <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
-        </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <version>${maven_bundle.version}</version>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>
-            <Export-Package>
-            </Export-Package>
-            <Private-Package>
-              tutorial.example1
-            </Private-Package>
-            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Bundle-Activator>
-              tutorial.example1.Activator
-            </Bundle-Activator>
-          </instructions>
-        </configuration>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

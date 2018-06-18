@@ -1,0 +1,3 @@
+Bundle-Activator: tutorial.example7.Activator
+Bundle-Description: A bundle that uses the Spell Checker service
+Export-Package: tutorial.example7

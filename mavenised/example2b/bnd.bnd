@@ -1,0 +1,2 @@
+Bundle-Activator: tutorial.example2b.Activator
+Export-Package: tutorial.example2b
