@@ -15,10 +15,15 @@
     <maven_jar.version>3.1.0</maven_jar.version>
     <maven_source.version>3.0.1</maven_source.version>
     <maven_javadoc.version>3.0.1</maven_javadoc.version>
-    <maven_surefire.version>2.21.0</maven_surefire.version>
+    <maven_surefire.version>2.22.0</maven_surefire.version>
     <osgi_core.version>5.0.0</osgi_core.version>
     <osgi_compendium.version>5.0.0</osgi_compendium.version>
     <felix_framework.version>5.6.10</felix_framework.version>
+    <pax_exam.version>4.11.0</pax_exam.version>
+    <pax_url.version>2.5.4</pax_url.version>
+    <javax_inject.version>1</javax_inject.version>
+    <logback.version>1.2.3</logback.version>
+    <alta.version>0.6.2</alta.version>
   </properties>
   <modules>
     <module>example1</module>
@@ -33,6 +38,7 @@
     <module>example7</module>
 <!--    <module>example8</module> -->
     <module>example9</module>
+    <module>it</module>
   </modules>
   <build>
     <pluginManagement>
@@ -67,6 +73,11 @@
               <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
             </archive>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven_surefire.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
